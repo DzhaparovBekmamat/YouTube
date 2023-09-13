@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">YouTubeClone</string>
+    <string name="app_name">YouTube.kg</string>
     <string name="playlist">playlist</string>
     <string name="playlist_with_capital">Playlist</string>
     <string name="playlist_name">Playlist name</string>
@@ -13,4 +13,5 @@
     <string name="number_of_video_series">number of video series</string>
     <string name="example_duration">04:14</string>
     <string name="download">Download</string>
+    <string name="select_video_quality">Select video quality</string>
 </resources>

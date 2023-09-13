@@ -36,5 +36,7 @@
     <dimen name="btn_download_width">140dp</dimen>
     <dimen name="btn_download_height">40dp</dimen>
     <dimen name="_200dp">200dp</dimen>
+    <dimen name="_20dp">20dp</dimen>
+    <dimen name="_40dp">40dp</dimen>
 
 </resources>

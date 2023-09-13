@@ -6,6 +6,7 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.dsl.module
 import retrofit2.Retrofit
+import com.template.youtubekg.BuildConfig
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
@@ -27,7 +28,7 @@ fun provideOkHttpClient(interceptor: Interceptor): OkHttpClient {
 }
 
 fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
-    return Retrofit.Builder().baseUrl(com.template.youtubekg.BuildConfig.BASE_URL)
+    return Retrofit.Builder().baseUrl(BuildConfig.BASE_URL)
         .addConverterFactory(GsonConverterFactory.create()).client(okHttpClient).build()
 }
 

@@ -8,8 +8,7 @@ import com.bumptech.glide.Glide
 import com.template.youtubekg.data.model.PlayListItemModel
 import com.template.youtubekg.databinding.ItemDetailBinding
 
-class DetailAdapter(private val onClick: (PlayListItemModel.Item) -> Unit) :
-    RecyclerView.Adapter<DetailAdapter.DetailViewHolder>() {
+class DetailAdapter(private val onClick: (PlayListItemModel.Item) -> Unit) : RecyclerView.Adapter<DetailAdapter.DetailViewHolder>() {
 
     private var list = mutableListOf<PlayListItemModel.Item>()
 
@@ -22,7 +21,9 @@ class DetailAdapter(private val onClick: (PlayListItemModel.Item) -> Unit) :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DetailViewHolder =
         DetailViewHolder(
             ItemDetailBinding.inflate(
-                LayoutInflater.from(parent.context), parent, false
+                LayoutInflater.from(parent.context),
+                parent,
+                false
             )
         )
 
